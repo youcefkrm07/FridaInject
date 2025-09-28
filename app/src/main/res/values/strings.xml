@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Clone Killer</string>
+    <string name="app_description">This application allows you to modify APK files by replacing specific method implementations inside DEX files. Select an APK file, process it, and then save the modified version.</string>
+    
+    <string name="step_1_select_apk">Step 1: Select APK File</string>
+    <string name="step_2_process_apk">Step 2: Process APK</string>
+    <string name="no_apk_selected">No APK file selected</string>
+    <string name="select_apk">Select APK File</string>
+    <string name="process_apk">Process APK</string>
+    <string name="ready_to_process">Ready to start processing</string>
+    <string name="developer_name">HarryGP</string>
+    <string name="advanced_options">Advanced Options</string>
+    <string name="target_class_path">Target Class Path</string>
+    <string name="target_method_signature">Target Method Signature</string>
+    <string name="replacement_smali_asset">Replacement Smali Asset</string>
+    
+    <string name="default_target_class">com/applisto/appcloner/classes/DefaultProvider</string>
+    <string name="default_target_method">.method public onCreate(Landroid/content/Context;)Z</string>
+    <string name="default_smali_asset">replacement_method.smali</string>
+</resources>

@@ -1,0 +1,56 @@
+
+plugins {
+    id 'com.android.application'
+    
+}
+
+android {
+    namespace 'com.modifier.app'
+    compileSdk 33
+    
+    defaultConfig {
+        applicationId "com.modifier.app"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        
+        vectorDrawables { 
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+        
+    }
+    
+}
+
+dependencies {
+
+
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation ("org.smali:dexlib2:2.5.2") // Core DEX library
+    implementation ("org.smali:baksmali:2.5.2") // Decompiler
+    implementation("org.smali:smali:2.5.2")   // Compiler
+    
+    implementation 'com.github.MuntashirAkon:apksig-android:4.4.0'
+
+
+
+}
